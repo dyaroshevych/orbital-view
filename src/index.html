@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="We will carefully monitor aerial photography of your properties to
+    help you better understand the health of your buildings.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Orbital View | Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#024a93">
+    <meta name="apple-mobile-web-app-title" content="Orbital View">
+    <meta name="application-name" content="Orbital View">
+    <meta name="msapplication-TileColor" content="#024a93">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/animations.css" defer />
+    <link rel="stylesheet" href="css/main.css" defer />
+    <link rel="stylesheet" href="css/header.css" defer />
+    <link rel="stylesheet" href="css/style.css" defer />
+  </head>
+  <body>
+    <div class="mobile-navigation">
+      <input
+        type="checkbox"
+        class="navigation__checkbox"
+        name="navi-toggle"
+        id="navi-toggle"
+      />
+      <label class="navigation__button" for="navi-toggle"
+        ><span class="navigation__icon"></span
+      ></label>
+      <div class="navigation__background"></div>
+      <nav class="navigation__content">
+        <ul class="navigation__list -u-center-text">
+          <li class="navigation__item">
+            <a href="/" class="navigation__link"><span>01</span>Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/how-it-works" class="navigation__link"
+              ><span>02</span>How It Works</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="/faq" class="navigation__link"><span>03</span>FAQ</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/contact" class="navigation__link"
+              ><span>04</span>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="header__navigation">
+      <div class="wrapper">
+        <a href="/" class="logo fadeIn">
+          <img src="img/logo.svg" alt="BrightSky" class="logo__img" />
+        </a>
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item fadeIn">
+            <a href="/" class="header__navigation-link active">Home</a>
+          </li>
+          <li
+            class="header__navigation-item fadeIn"
+            style="animation-delay: .1s"
+          >
+            <a href="/how-it-works" class="header__navigation-link"
+              >How It Works</a
+            >
+          </li>
+          <li
+            class="header__navigation-item fadeIn"
+            style="animation-delay: .2s"
+          >
+            <a href="/faq" class="header__navigation-link">FAQ</a>
+          </li>
+          <li
+            class="header__navigation-item fadeIn"
+            style="animation-delay: .3s"
+          >
+            <a href="/contact" class="header__navigation-link"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header__video-container">
+        <video class="header__video" id="header-bg-vid" loop="true" muted>
+          <source src="img/home-header-bg.mp4" type="video/mp4" defer />
+        </video>
+      </div>
+      <div class="header__container">
+        <div class="header__content wrapper">
+          <div class="header__content-container">
+            <h1 class="heading-primary fadeInUp" style="animation-delay: .2s">
+              Roofing Reimagined
+            </h1>
+            <span class="heading-quote fadeInUp" style="animation-delay: .2s"
+              >Elevate your perspective</span
+            >
+            <div class="header__info-section">
+              <div
+                class="header__info-item fadeIn"
+                style="animation-delay: .1s"
+              >
+                <img class="header__info-img" src="img/header-1.svg" alt="" />
+                <h3 class="heading-tertiary">Harness Satellite Data</h3>
+              </div>
+              <div
+                class="header__info-item fadeIn"
+                style="animation-delay: .2s"
+              >
+                <img class="header__info-img" src="img/header-2.svg" alt="" />
+                <h3 class="heading-tertiary">Submit a Customized Claim</h3>
+              </div>
+              <div
+                class="header__info-item fadeIn"
+                style="animation-delay: .3s"
+              >
+                <img class="header__info-img" src="img/header-3.svg" alt="" />
+                <h3 class="heading-tertiary">Receive the Roof You Deserve</h3>
+              </div>
+            </div>
+            <div class="header__buttons-container">
+              <a
+                href="/contact"
+                class="btn btn--blue fadeIn"
+                data-wow-delay=".3s"
+                >Contact Us</a
+              >
+              <a
+                href="/how-it-works"
+                class="btn btn--transparent fadeIn"
+                style="animation-delay: .4s"
+                data-wow-delay=".4s"
+              >
+                How It Works
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>document.querySelector("#header").style.paddingTop = document.querySelectorAll(".header__navigation")[0].offsetHeight + 'px';</script>
+    <script defer>
+      document.querySelector("#header-bg-vid").play();
+      const headerVideo = document.querySelectorAll(".header__video-container")[0];
+      headerVideo.style.height = document.querySelector("#header").offsetHeight + 'px';
+      window.addEventListener('resize', () => {
+        headerVideo.style.height = document.querySelector("#header").offsetHeight + 'px';
+      });
+    </script>
+  </body>
+</html>
