@@ -5,5 +5,6 @@ Technologies used:
 HTML
 CSS
 JavaSctipt
+Animate.css library
 
 Deployed with: GitHub Pages
