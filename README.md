@@ -2,9 +2,9 @@ Website for Orbital View - an artificial intelligence company focused on roof da
 
 Technologies used:
 
-HTML
-CSS
-JavaSctipt
-Animate.css library
+- HTML
+- CSS
+- JavaSctipt
+- animate.css library
 
 Deployed with: GitHub Pages
